@@ -52,7 +52,7 @@ box-sizing: border-box;
 
 .footer{
     grid-area: footer;
-    background-color: rgba(245, 189, 198, 0.795);
+    background-image:linear-gradient(white,rgba(245, 189, 198, 0.795));
     font-family: 'Great Vibes', cursive;
 }
 /*Header*/
