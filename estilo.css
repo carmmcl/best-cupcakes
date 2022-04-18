@@ -1,0 +1,344 @@
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.img1{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*index*/
+
+.containerindex{
+    width: 75%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas: 
+    "header header"
+    "foto1 foto2"
+    "footer footer";
+    gap: 5px;
+}
+
+.header{
+    background-color:white;
+    grid-area: header;
+}
+
+.foto1 {
+    grid-area: foto1;
+    background-color: rgba(245, 189, 198, 0.795);
+}
+
+.foto2 {
+    grid-area: foto2;
+    background-color:rgba(245, 189, 198, 0.795);
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgba(245, 189, 198, 0.795);
+    font-family: 'Great Vibes', cursive;
+}
+/*Header*/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+
+/*h 1 h2 h3*/
+
+h1 {
+    text-align: left;
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    font-weight: 3; 
+    
+}
+
+h2{
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    font-weight: 3;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5rem;
+    font-weight: 10; 
+    margin: auto;
+}
+
+/*nav*/
+nav ul{
+    display: flex;
+    gap: 4rem;
+}
+nav ul li{
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 30px;
+}
+
+nav ul ul li a {
+    font-size: 1.5rem;
+    display: none;
+}
+nav :hover{
+    background-color:ghostwhite;
+    color:rgba(245, 189, 198, 0.795) ;
+}
+
+/*imagenes index*/
+img{
+    border: turquoise 20px dotted;    
+}
+
+
+/*Nosotros*/
+
+.containernosotros{
+    width: 75%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+}
+.main{
+    grid-area: main;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 30px;
+    line-height: 1.5;
+    border-top: pink solid;
+}
+
+/*Sabores*/
+    
+.containersabores{
+    width: 75%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-areas: 
+    "header header header"
+    "foto3 foto4 foto5"
+    "footer footer footer";
+}
+
+.mainsabores{
+    grid-area: mainsabores;
+        font-family: 'Bilbo Swash Caps', cursive;
+        font-size: 30px;
+        line-height: 1.5;
+        border-top: pink solid;
+}    
+ 
+.foto3 {
+    grid-area: foto3;
+    background-color: rgba(245, 189, 198, 0.795);
+}
+.foto4 {
+    grid-area: foto4;
+    background-color:rgba(245, 189, 198, 0.795);
+}
+.foto5 {
+    grid-area: foto5;
+    background-color:rgba(245, 189, 198, 0.795);
+}
+
+/*Recetas*/
+.containerrecetas{
+    width: 75%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "rvainilla rchoco rlimon"
+    "footer footer footer";
+}
+
+   
+.rvainilla {
+    grid-area: rvainilla;
+    background-color: rgba(245, 189, 198, 0.795);
+    border: turquoise dotted 5px;
+}
+.rchoco {
+    grid-area: rchoco;
+    background-color:rgba(245, 189, 198, 0.795);
+    border: turquoise dotted 5px;
+}
+.rlimon {
+    grid-area: rlimon;
+    background-color:rgba(245, 189, 198, 0.795);
+    border: turquoise dotted 5px;
+}   
+
+ol li {    
+    text-align: left;
+    font-family: 'Great Vibes', cursive;
+    font-size: 20px;
+    font-weight: 5; 
+    margin: auto;
+}
+
+
+/*Contacto*/
+.containercontacto{
+    width: 75%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "header header"
+    "contacto formulario"
+    "footer footer";
+    gap: 5px;
+}
+
+.contacto{
+    grid-area: contacto;
+    border: turquoise dotted 5px;
+    background-color: rgba(245, 189, 198, 0.795);
+}
+
+
+.formulario{
+    grid-area: formulario;
+    border: turquoise dotted 5px;
+    background-color: rgba(245, 189, 198, 0.795);
+}
+
+
+/*Media queries */
+
+@media screen and (max-width:768px){
+
+    .containerindex{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto 1fr;
+        grid-template-areas: 
+        "header"
+        "foto1"
+        "foto2"
+        "footer";       
+    } 
+    
+    .containernosotros{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "footer";       
+    }    
+
+    .containersabores{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto auto 1fr;
+        grid-template-areas: 
+        "header"
+        "foto3"
+        "foto4"
+        "foto5"
+        "footer";       
+    }    
+
+    .containerrecetas{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "rvainilla"
+        "rchoco"
+        "rlimon"
+        "footer";       
+    }    
+
+    .containercontacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "contacto"
+        "formulario"
+        "footer";       
+    }    
+
+}
+
+
+@media screen and (max-width:500px){
+
+    .containerindex{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto 1fr;
+        grid-template-areas: 
+        "header"
+        "foto1"
+        "foto2"
+        "footer";       
+    } 
+    
+    .containernosotros{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "main"
+        "footer";       
+    }    
+
+    .containersabores{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto auto 1fr;
+        grid-template-areas: 
+        "header"
+        "foto3"
+        "foto4"
+        "foto5"
+        "footer";       
+    }    
+
+    .containerrecetas{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "rvainilla"
+        "rchoco"
+        "rlimon"
+        "footer";       
+    }    
+
+    .containercontacto{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "header"
+        "contacto"
+        "formulario"
+        "footer";       
+    }    
+
+}
