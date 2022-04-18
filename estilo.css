@@ -31,12 +31,24 @@ box-sizing: border-box;
 .foto1 {
     grid-area: foto1;
     background-color: rgba(245, 189, 198, 0.795);
+    transition: all 1s;
 }
 
 .foto2 {
     grid-area: foto2;
     background-color:rgba(245, 189, 198, 0.795);
+    transition: all 1s;
 }
+
+/*Transformacion fotos*/
+
+.foto1:hover{
+    transform: scale(1.1,1.1);
+}
+.foto2:hover{
+    transform: scale(1.1,1.1);
+}
+
 
 .footer{
     grid-area: footer;
@@ -65,6 +77,27 @@ h2{
     font-family: 'Great Vibes', cursive;
     font-size: 3rem;
     font-weight: 3;
+}
+
+/*Animacion Titulo Nosotros*/
+
+.nosotros{
+    animation-name: titulo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes titulo{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 100;
+       
+    }
+    100%{
+        opacity: 0;
+    }
 }
 
 h3 {
@@ -151,14 +184,29 @@ img{
 .foto3 {
     grid-area: foto3;
     background-color: rgba(245, 189, 198, 0.795);
+    transition: all 1s;
 }
 .foto4 {
     grid-area: foto4;
     background-color:rgba(245, 189, 198, 0.795);
+    transition: all 1s;
 }
 .foto5 {
     grid-area: foto5;
     background-color:rgba(245, 189, 198, 0.795);
+    transition: all 1s;
+}
+
+/*Transformacion fotos*/
+
+.foto3:hover{
+    transform: scale(1.1,1.1);
+}
+.foto4:hover{
+    transform: scale(1.1,1.1);
+}
+.foto5:hover{
+    transform: scale(1.1,1.1);
 }
 
 /*Recetas*/
